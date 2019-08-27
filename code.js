@@ -148,6 +148,16 @@ keyAPI = "trnsl.1.1.20130922T110455Z.4a9208e68c61a760.f819c1db302ba637c2bea1befa
           //your code to be executed after 1 second
         }, 5000);
       }
+      if (val.result.parameters.parametrosena) {
+        respond(val.result.fulfillment.speech); // importante para el lenguaje de señas
+        $("#videoshowsena").show();
+        $("#videoshowsena").attr("src",val.result.parameters.parametrosena+".mp4");
+        setTimeout(function() {
+          $("#videoshowsena").attr("src","");
+          $("#videoshowsena").hide();
+          //your code to be executed after 1 second
+        }, 5000);
+      }
 
 
     }
