@@ -142,25 +142,20 @@ keyAPI = "trnsl.1.1.20130922T110455Z.4a9208e68c61a760.f819c1db302ba637c2bea1befa
         respond(val.result.fulfillment.speech); // importante para el lenguaje de señas
         $("#imgshowpala").show();
         $("#imgshowpala").attr("src",val.result.parameters.parametrosena+".gif");
+
+        $("#imgshowsena").show();
+        $("#imgshowsena").attr("src",val.result.parameters.parametrosena+".png");
+
         setTimeout(function() {
           $("#imgshowpala").attr("src","");
           $("#imgshowpala").hide();
-          //your code to be executed after 1 second
-        }, 10000);
-      }
-      if (val.result.parameters.parametrosena) {
-        respond(val.result.fulfillment.speech); // importante para el lenguaje de señas
-        $("#imgshowsena").show();
-        $("#imgshowsena").attr("src",val.result.parameters.parametrosena+".png");
-        setTimeout(function() {
+
           $("#imgshowsena").attr("src","");
           $("#imgshowsena").hide();
           //your code to be executed after 1 second
-        }, 5000);
+        }, 10000);
       }
-
-
-
+      
     }
 
     debugRespond(debugJSON);
