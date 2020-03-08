@@ -1,8 +1,8 @@
 var url = "https://translate.yandex.net/api/v1.5/tr.json/translate",
 voiceselect = "Spanish Latin American Female";
 keyAPI = "trnsl.1.1.20130922T110455Z.4a9208e68c61a760.f819c1db302ba637c2bea1befa4db9f784e9fbb8";
-  var accessToken = "bdc25e10fdda4b8284f90250384f91ac",
-    baseUrl = "https://api.dialogflow.com/v1/query",
+  var accessToken = "1bd4fee0800c45468b0af96bcc2c43bc",
+    baseUrl = "https://api.dialogflow.com/v2/query",
     $speechInput,
     $recBtn,
     recognition,
